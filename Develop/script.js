@@ -15,7 +15,11 @@ function length() {
     return length();
   }
 };
-  
+
+function selection() {
+  confirm("Must select 'Yes' to AT LEAST one of the following 4 prompts!");
+};
+
 function getLowerCase() {
   var useLower = prompt('Use lower case letters? Type "yes" or "no".');
   if (useLower === 'y' || useLower === 'yes'  || useLower === 'Yes') {
@@ -62,10 +66,15 @@ function getSpecial() {
 
 function generatePassword() {
   length();
+  selection();
   getLowerCase();
   getUpperCase();
   getNumber();
   getSpecial();
+
+// I think this is where the password generation occurs
+//BUT HOW??!!
+
 };
 
 
